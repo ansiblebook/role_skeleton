@@ -1,5 +1,5 @@
 ---
-#
+# https://ansible-lint.readthedocs.io/en/latest/default_rules/
 exclude_paths:
   - ./.tox
 skip_list:
