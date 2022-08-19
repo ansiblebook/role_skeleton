@@ -30,6 +30,7 @@ ansible-galaxy role init nginx
 molecule test
 ```
 
+# Configure first!
 
 ```sh
 mkdir -p $HOME/git ~/.ansible/roles
@@ -43,7 +44,7 @@ role_skeleton = ~/git/role_skeleton
 role_skeleton_ignore = ^.git$,^.*/.git_keep$,LICENSE,README.md
 ```
 
-## matrix testing
+## matrix testing in a generated role
 
 ```sh
 pip install --user tox
@@ -51,7 +52,7 @@ pip install --user tox
 tox
 ```
 
-## pre-commit hooks
+## pre-commit hooks in a generated role
 
 ```sh
 pip install --user pre-commit tox
