@@ -1,0 +1,12 @@
+# This is an example playbook to execute Ansible tests.
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  vars_files:
+    ../../vars/present.yml
+  tasks:
+    - name: "Include {{ role_name }}"
+      ansible.builtin.include_role:
+        name: "{{ role_name }}"
+        tasks_from: verify

@@ -1,0 +1,8 @@
+---
+# handlers file for {{ role_name }}
+- name: Control service
+  ansible.builtin.systemd:
+    name: "{{ service }}"
+    state: "{{ systemd_state }}"
+    enabled: "{{ systemd_enabled }}"
+    daemon_reload: true
