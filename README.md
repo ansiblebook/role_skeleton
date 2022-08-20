@@ -37,7 +37,7 @@ mkdir -p $HOME/git ~/.ansible/roles
 cd $HOME/git
 git clone https://github.com/ansiblebook/role_skeleton.git
 ```
-Add these lines to your ansible.cfg
+Add these lines to your ~/.ansible.cfg
 ```ini
 [galaxy]
 role_skeleton = ~/git/role_skeleton
