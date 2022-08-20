@@ -1,6 +1,5 @@
 ---
 # Variable values for desired_state: absent
-enabled_state: disabled
 package_clause: "not in"
 service_state: stopped
 systemd_state: stopped
