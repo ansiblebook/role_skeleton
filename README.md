@@ -57,6 +57,9 @@ tox
 ```sh
 pip install --user pre-commit tox
 # edit .pre-commit-config.yaml for a relevant setup
+git init
 pre-commit install
+git add .
+commit -m "initial commit"
 pre-commit run --all-files
 ```
