@@ -28,12 +28,14 @@ driver:
 {% endif %}
 
 platforms:
-  - name: ubi8
-    image: registry.access.redhat.com/ubi8/ubi-init
+  - name: alma8
+    image: dokken/almalinux-8
     pre_build_image: true
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+      - /var/lib/containerd
     privileged: true
+    cgroupns_mode: host
     command: "/usr/sbin/init"
 
 provisioner:
